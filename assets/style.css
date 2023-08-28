@@ -1,0 +1,52 @@
+:root{
+    --primary: #1e3f66;
+    --secondary: rgb(104, 104, 104);
+}
+
+* {
+    color: var(--primary);
+    box-sizing: border-box;
+    font-family: "Optima", calibri, serif;
+}
+
+header {
+    border-radius: 7px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px 10px 30px;
+}
+nav {
+    background-color: var(--secondary);
+    overflow: hidden;
+    border-radius: 7px;
+    box-shadow: 5px 5px rgb(166, 166, 166);
+  }
+  
+  nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  nav a.active {
+    background-color: var(--primary);
+    color: white;
+  }
+
+  nav a:hover {
+    background-color: rgb(143, 143, 143);
+    color: black;
+  }
+
+body {
+    background-color: rgb(255, 250, 238);
+}
+
+.card {
+    
+}
