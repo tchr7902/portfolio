@@ -1,6 +1,10 @@
 :root{
-    --primary: #1e3f66;
-    --secondary: rgb(104, 104, 104);
+    --primary: #0e1e31;
+    --secondary: rgb(48, 48, 48);
+}
+
+body {
+  background-image: url(./images/dark-blue-texture-free-photo.jpg)
 }
 
 * {
@@ -16,12 +20,37 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px 30px 10px 30px;
+    height: 20vh;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .8);
 }
+
+header h1 {
+  font-size: 8vh;
+  text-align: center;
+}
+
+main {
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .8);
+}
+
+footer {
+  border-radius: 7px;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .8);
+}
+
 nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
     background-color: var(--secondary);
     overflow: hidden;
     border-radius: 7px;
-    box-shadow: 5px 5px rgb(166, 166, 166);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   }
   
   nav a {
@@ -29,12 +58,13 @@ nav {
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
+    text-decoration: underline;
     font-size: 17px;
   }
   
   nav a.active {
     background-color: var(--primary);
+    border-radius: 7px;
     color: white;
   }
 
@@ -49,4 +79,22 @@ body {
 
 .card {
     
+}
+
+@media only screen and (max-width: 730px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
 }
