@@ -9,8 +9,13 @@ body {
 
 * {
     color: var(--primary);
+    justify-content: center;
     box-sizing: border-box;
     font-family: "Optima", calibri, serif;
+}
+
+.top-section {
+  justify-content: center;
 }
 
 header {
@@ -20,8 +25,8 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px 50px 10px 50px;
-    height: 20vh;
     background-color: white;
+    height: 100%;
     box-shadow: 0 0 20px rgba(0, 0, 0, .8);
 }
 
@@ -31,18 +36,16 @@ header h1 {
 }
 
 main {
+  margin: 10px 10px 10px 10px;
   background-color: white;
   border-radius: 7px;
   box-shadow: 0 0 20px rgba(0, 0, 0, .8);
-}
-
-footer {
-  border-radius: 7px;
-  background-color: white;
-  box-shadow: 0 0 20px rgba(0, 0, 0, .8);
+  padding: 10px 50px 10px 50px;
+  text-align: center;
 }
 
 nav {
+    margin: 10px 10px 10px 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -75,16 +78,41 @@ nav {
   }
 
 body {
+    margin: 10px 10px 10px 10px;
     background-color: rgb(255, 250, 238);
+    padding: 10px 50px 10px 50px;
 }
 
 .banner {
+  margin: 10px 10px 10px 10px;
   background-color: white;
   border-radius: 7px;
+  padding: 10px 50px 10px 50px;
+  text-align: center;
+  font-size: 120%;
 }
 
 .card {
     
+}
+
+footer {
+  text-align: center;
+  margin: 10px 10px 10px 10px;
+  border-radius: 7px;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .8);
+  padding: 10px 50px 10px 50px;
+  text-decoration: underline;
+  font-size: 120%;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-around;
+  padding-left: 0;
 }
 
 @media only screen and (max-width: 750px) {
@@ -94,7 +122,7 @@ body {
     flex: wrap;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: stretch;
+    align-items: center;
   }
 
   header h1 {
