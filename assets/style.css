@@ -1,6 +1,7 @@
 :root{
     --primary: #0e1e31;
     --secondary: rgb(48, 48, 48);
+    --bckgrnd: #ffffffbe;
 }
 
 body {
@@ -11,11 +12,12 @@ body {
     color: var(--primary);
     justify-content: center;
     box-sizing: border-box;
-    font-family: "Optima", calibri, serif;
+    font-family: georgia, calibri, serif;
 }
 
 .top-section {
   justify-content: center;
+  
 }
 
 header {
@@ -24,8 +26,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 50px 10px 50px;
-    background-color: white;
+    padding: 30px 80px 30px 80px;
+    background-color: var(--bckgrnd);
     height: 100%;
     box-shadow: 0 0 20px rgba(0, 0, 0, .8);
 }
@@ -36,12 +38,19 @@ header h1 {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
   margin: 10px 10px 10px 10px;
-  background-color: white;
+  background-color: var(--bckgrnd);
   border-radius: 7px;
   box-shadow: 0 0 20px rgba(0, 0, 0, .8);
-  padding: 10px 50px 10px 50px;
+  padding: 20px 50px 20px 50px;
   text-align: center;
+  justify-content: space-between;
+}
+
+h2 {
+  font-size: 3.2vw;
 }
 
 nav {
@@ -58,7 +67,7 @@ nav {
   
   nav a {
     float: left;
-    color: #f2f2f2;
+    color: var(--bckgrnd);
     text-align: center;
     padding: 14px 16px;
     text-decoration: underline;
@@ -68,7 +77,7 @@ nav {
   nav a.active {
     background-color: var(--primary);
     border-radius: 7px;
-    color: white;
+    color: var(--bckgrnd);
   }
 
   nav a:hover {
@@ -79,32 +88,58 @@ nav {
 
 body {
     margin: 10px 10px 10px 10px;
-    background-color: rgb(255, 250, 238);
+    background-color: var(--bckgrnd);
     padding: 10px 50px 10px 50px;
 }
 
 .banner {
   margin: 10px 10px 10px 10px;
-  background-color: white;
+  padding: 20px 50px 20px 50px;
+  background-color: var(--bckgrnd);
   border-radius: 7px;
-  padding: 10px 50px 10px 50px;
   text-align: center;
-  font-size: 120%;
+  font-size: 1.5vw;
+}
+
+.banner p {
+  display: inline-block;
+  max-width: 70%;
 }
 
 .card {
-    
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 2.7vw;
+  padding: 20px;
+}
+
+img {
+  border-radius: 7px;
+  flex: 1;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  max-width: 50%;
+  max-height: 50%;
+}
+
+div .image {
+  display: block;
+  border-radius: 7px;
+}
+
+.container {
+  display: flex;
+  padding: 2px 16px;
 }
 
 footer {
   text-align: center;
   margin: 10px 10px 10px 10px;
   border-radius: 7px;
-  background-color: white;
+  background-color: var(--bckgrnd);
   box-shadow: 0 0 20px rgba(0, 0, 0, .8);
   padding: 10px 50px 10px 50px;
-  text-decoration: underline;
-  font-size: 120%;
+  font-size: 1.8vw;
 }
 
 footer ul {
@@ -139,5 +174,10 @@ footer ul {
     justify-content: center;
     max-height: 20%;
     max-width: 100%;
+  }
+
+  .card {
+    flex-direction: column;
+    justify-content: center;
   }
 }
